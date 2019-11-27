@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <title>Caraku Wap</title>
+<link href="http://vgba.xtgem.com/css/ebc.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="header">
+<h1>
+<a href="/">Caraku Wap</h1>
+<hr/><h2>
+Safelink for Caraku Blog</div>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="/">CB</a>
+    </div>
+<div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+<li class="active"><a href="#">Home</a></li>
+<li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Contact <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+<li><a href="mailto:isi email kalian">E-mail</a></li>
+<li><a href="http://fb.com/herda.arianda">Facebook</a></li>
+<li><a href="http://instagram.com/herda.arianda">Instagram</a></li>
+<li><a href="http://twitter.com">Twitter</a></li>
+</ul>
+</li>
+<li><a href="http://vgba.xtgem.com/index?r=c2F1bmdhcGsuYmxvZ2VyLmlk">Example</a></li>
+<li><a href="http://saungapk.bloger.id">Website</a></li>
+</ul>
+<ul class="nav navbar-nav navbar-right">
+<li><a href="http://xtgem.com/signup"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+<li><a href="http://xtgem.com/login"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+</ul>
+</div>
+</div>
+</nav>
+    <!--parser:xtscript-->
+<br />
+get r
+get s
+<br />
+if not $r
+print {{<div class="menu" align="center">
+<form action="index">
+<b>Masukan URL :</b>
+<br/><input class="input" type="text" name="s" />
+<br/><input class="tap" type="submit" value="Safelink" />
+</form>
+</div>
+}}
+endif
+<br />
+
+if $s
+var $sl=call str_replace $subject=$s;$search=https://;$replace;
+var $sl=call str_replace $subject=$sl;$search=http://;$replace;
+var $sl=call base64_encode $val=$sl
+var $sd=<xt:url type="domain" />
+print {{<div class="menu" align="center">
+Link berhasil di Amankan. Silahkan Copy di bawah.<hr/>
+<br /><input class="input" type="text" value="http://$sd/index?r=$sl" /><p>
+<a href="http://$sd/index?r=$sl" class="tap">Pratinjau</a></p>
+</div>
+}}
+endif
+<br />
+if $r
+var $gl=call base64_decode $val=$r
+var $gl=http://$gl
+var $gs=call substr $val=$gl;$start=0;$length=20
+var $gs=$gs....
+print {{<div class="ads">
+<p align="center">
+<a href="$gl"><img src="http://vgba.xtgem.com/img/linkto.jpg"/></a></p>
+</div>
+<div class="post">
+<h2 class="post-title">
+Why A Personal Accident Insurance Policy is The First Insurance That You Should Buy?</h2>
+<div class="post-meta">
+<i class="glyphicon glyphicon-user"></i> Gozaru  <i class="glyphicon glyphicon-time"></i> 17 Agustus 2018</div>
+<p>
+<img src="http://vgba.xtgem.com/img/asuransi.jpg" width="100%"/></p>
+<p>
+Chances are high that you might have already bought term and health insurance policies and now you are happy that you have properly protected yourself.</p>
+<br />
+<p>
+But before you put your insurance planning on a back seat, it is necessary to find out the gap in your insurance portfolio.</p>
+<br />
+<p>
+If after an accident, you are in a hospital, your health insurance policy will take care of your medical bills up to a certain limit. However, in addition to medical expenses, you may have to experience loss of income as well.</p>
+<br />
+<p>
+Consequence: You will have to pay the remaining medical expenses along with making proper arrangement to recuperate from the financial loss that may arise due to loss of income.</p>
+<br />
+<p>
+Even after buying health and term insurance policies, a gap is there in your insurance portfolio, which you can fill with a personal accident insurance policy only.</p>
+<br />
+<p>
+Mainly covering all sorts of disabilities, here are some of the benefits of purchasing a personal accident insurance policy:</p>
+<br />
+<p>
+A basic accident insurance policy covers both accidental death and disability and can be further enhanced to get extra cover</p>
+<br />
+<p>
+From minor to major, a personal accident policy covers all types of accidents ranging from falling off a stair at home, fracturing an arm while playing football to getting hit by a vehicle</p>
+<br />
+<p>
+It is a useful policy as it offers coverage against partial, temporary, or full disability and even the loss of income</p>
+<br />
+<p>
+Some of the policies are bundled with extra features like child education allowance, coverage for injuries caused due to terrorism, transportation of mortal remains, etc.</p>
+<br />
+<p>
+Remember, while you can’t stop accidents from happening, you surely can protect it by having a proper safeguard in the form of a personal accident insurance policy.</p>
+<br />
+<p>
+By the way, I hope you have the answer of the question—why personal accident policy is the first insurance that you should buy?</p>
+</div>
+}}
+<br />
+endif
+<!--/parser:xtscript-->
+<div class="footer">
+© 2017 - 2018 <a href="/">Caraku Wap</a> <h6>
+Powered by <a href="http://xtgem.com">Xtgem.Com</a></h6>
+</div>
+<br />
+</body>
+</html>
